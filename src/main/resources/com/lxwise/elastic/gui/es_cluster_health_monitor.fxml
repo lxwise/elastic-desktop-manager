@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" xmlns="http://javafx.com/javafx/11.0.14-internal"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lxwise.elastic.gui.ClusterHealthMonitorController">
+    <content>
+        <StackPane>
+            <FlowPane alignment="TOP_CENTER" columnHalignment="CENTER" hgap="150.0" orientation="VERTICAL" vgap="50.0">
+                <children>
+                    <VBox spacing="10" styleClass="custom-float-card-container">
+                        <!-- 顶部工具栏 -->
+                        <HBox alignment="CENTER" spacing="20.0" style="-fx-padding: 10px;">
+                            <Label prefHeight="22.0" prefWidth="186.0" text="%cluster.health.node.info">
+                                <font>
+                                    <Font size="16.0"/>
+                                </font>
+                            </Label>
+                            <HBox alignment="CENTER_RIGHT" prefHeight="23.0" prefWidth="783.0" spacing="5.0">
+                                <children>
+                                    <Button fx:id="handleNodeRefreshBtn" onAction="#handleRefresh"/>
+                                    <ComboBox id="custom-combo-box" fx:id="refreshNodeIntervalComboBox"
+                                              styleClass="custom-combo-box"/>
+                                </children>
+                            </HBox>
+                        </HBox>
+                        <Separator prefWidth="200.0"/>
+                        <!-- 数据表格 -->
+                        <TableView fx:id="tableNodeView" prefHeight="692.0" prefWidth="1040.0">
+                            <columns>
+                                <TableColumn/>
+                                <TableColumn/>
+                            </columns>
+                        </TableView>
+                        <FlowPane.margin>
+                            <Insets left="50.0"/>
+                        </FlowPane.margin>
+                    </VBox>
+
+                    <!-- 集群健康数据 -->
+                    <VBox minWidth="660.0" prefHeight="760.0" prefWidth="700.0" spacing="10" styleClass="custom-float-card-container">
+                        <!-- 顶部工具栏 -->
+                        <HBox alignment="CENTER" spacing="20.0" style="-fx-padding: 10px;">
+                            <Label prefHeight="22.0" prefWidth="186.0" text="%cluster.health.cluster.info">
+                                <font>
+                                    <Font size="16.0"/>
+                                </font>
+                            </Label>
+                            <HBox alignment="CENTER_RIGHT" prefHeight="23.0" prefWidth="519.0" spacing="5.0">
+                                <children>
+                                    <Button fx:id="handleRefreshBtn" onAction="#handleRefresh"/>
+                                    <ComboBox id="custom-combo-box" fx:id="refreshIntervalComboBox"
+                                              styleClass="custom-combo-box"/>
+                                </children>
+                            </HBox>
+                        </HBox>
+                        <Separator prefWidth="200.0"/>
+                        <!-- 数据表格 -->
+                        <TableView fx:id="tableView" prefHeight="694.0" prefWidth="719.0">
+                            <columns>
+                                <TableColumn/>
+                                <TableColumn/>
+                            </columns>
+                        </TableView>
+                        <FlowPane.margin>
+                            <Insets right="50.0"/>
+                        </FlowPane.margin>
+                    </VBox>
+                </children>
+            </FlowPane>
+        </StackPane>
+    </content>
+</ScrollPane>

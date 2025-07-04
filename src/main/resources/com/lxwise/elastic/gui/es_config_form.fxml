@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import atlantafx.base.controls.Tile?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.lxwise.elastic.gui.ConfigFormController"
+            prefHeight="355.0" prefWidth="625.0">
+    <children>
+        <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <bottom>
+                <HBox alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="200.0" spacing="10.0" BorderPane.alignment="CENTER">
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                    <children>
+                        <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#onCancel" text="%config.form.cancel" />
+                        <Button fx:id="saveButton" mnemonicParsing="false" onAction="#onSave" text="%config.form.save" />
+                    </children>
+                </HBox>
+            </bottom>
+            <center>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0" spacing="15.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <children>
+                                <Tile fx:id="nameTile" />
+                                <Tile fx:id="serverTile" />
+                                <Tile fx:id="securityTile" />
+                                <Tile fx:id="usernameTile" visible="false" />
+                                <Tile fx:id="passwordTile" visible="false" />
+                            </children>
+                        </VBox>
+                    </children>
+                </AnchorPane>
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane prefHeight="1156.0" prefWidth="1243.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lxwise.elastic.gui.ClusterRestHistoryController">
+    <children>
+        <VBox fx:id="contentPane" prefHeight="1026.0" prefWidth="405.0" spacing="10.0">
+            <children>
+                <HBox fx:id="searchInputGroup" alignment="CENTER_RIGHT" />
+            <BorderPane fx:id="tablePane" prefHeight="1147.0" prefWidth="1243.0">
+               <center>
+                  <TableView fx:id="historyTableView" prefHeight="762.0" prefWidth="1243.0" />
+               </center>
+            </BorderPane>
+            <VBox prefHeight="1299.0" prefWidth="1243.0" spacing="10.0">
+               <children>
+                  <TextArea fx:id="historyCommandValue" prefHeight="597.0" prefWidth="1227.0" />
+                  <HBox alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="1243.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="cancelBtn" mnemonicParsing="false" onAction="#cancelAction" text="%cluster.rest.history.cancel" />
+                        <Button fx:id="confirmBtn" mnemonicParsing="false" onAction="#confirmAction" text="%cluster.rest.history.confirm" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            </children>
+        </VBox>
+    </children>
+</StackPane>

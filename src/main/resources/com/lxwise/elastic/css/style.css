@@ -1,0 +1,203 @@
+.bg-default{
+    -fx-background-color: -color-bg-inset;
+}
+
+.card-header {
+    -fx-border-width: 0 0 1px 0;
+    -fx-border-color: -color-border-default;
+}
+
+.dialog-pane {
+    -fx-border-color: -color-border-default;
+}
+
+.tile-base .title {
+    -fx-font-size: 1em;
+}
+
+.tile-base .description {
+    -fx-font-size: 0.85em;
+}
+
+/*******************************菜单相关*******************************/
+.menu-bar {
+    -fx-font-size: 12px; /* 设置字体大小 */
+}
+
+.menu-bar .menu-item {
+    -fx-font-size: 12px; /* 设置字体大小 */
+}
+
+.menu-bar {
+    -fx-border-width: 0; /* 移除边框 */
+    -fx-background-insets: 0; /* 确保背景填充 */
+    -fx-background-color: transparent;
+    -fx-border-color: transparent; /* 使边框颜色透明 */
+}
+/* 调整 Tab 文字大小 */
+.tab {
+    -fx-font-size: 14px;  /* 修改字体大小 */
+}
+
+/* 调整 Tab 文字与底部线条的间距 */
+.tab {
+    -fx-padding: 6px 12px 6px 12px; /* 上、右、下、左的间距 */
+}
+
+/***************************定时任务时间下拉**********************/
+/* ComboBox 样式调整 */
+.custom-combo-box {
+    -fx-background-color: -color-bg-default;
+    -fx-border-color: transparent transparent #ccc transparent; /* 仅底部边框 */
+    -fx-border-width: 0 0 1px 0;
+
+}
+/* 鼠标悬停时底部边框变色 */
+.custom-combo-box:hover {
+    -fx-border-color: transparent transparent #539df6 transparent;
+}
+
+.custom-combo-box .arrow {
+    -fx-shape: "M 0 0 L 6 6 L 12 0 Z";
+}
+
+/* 下拉展开时，箭头旋转 */
+.custom-combo-box:showing .arrow {
+    -fx-rotate: 180;
+}
+
+/********************* 内容悬浮卡片样式************************** */
+.custom-float-card-container {
+    -fx-background-color: -color-bg-default;
+    -fx-background-radius: 10;
+    -fx-padding: 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0.1, 0, 4);
+}
+
+/************************分片小盒子样式***************************************/
+
+.custom-sharding-box-container {
+    -fx-background-color: -color-bg-default;
+    -fx-border-color: -color-border-default;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+/**************************富文本编辑器样式************************************************/
+/* RichTextFX 编辑区域 */
+/* 背景和边框 */
+.style-classed-text-area {
+    -fx-background-color: transparent;
+    -fx-border-color: -color-border-default;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+}
+
+.style-classed-text-area .content {
+    -fx-background-color: -color-bg-default;
+}
+/* 高亮样式，固定红色 */
+.highlight {
+    -fx-fill: #F76C6C;
+    -fx-font-weight: bold;
+}
+/* 默认字体颜色，自动适配亮暗主题 */
+.styled-text-area .text {
+    -fx-fill: -color-fg-default;
+}
+/* 高亮样式，始终红色字体 */
+.style-classed-text-area .text.highlight {
+    -fx-fill: #F76C6C;
+    -fx-font-weight: bold;
+}
+
+/**************************TableView样式************************************************/
+/* 表格表头和内居中显示 */
+/*.table-view .column-header,*/
+/*.table-view .column-header .label {*/
+/*    -fx-alignment: center;*/
+/*    -fx-text-alignment: center;*/
+/*}*/
+
+/*.table-cell {*/
+/*    -fx-alignment: center;*/
+/*}*/
+
+
+
+/**************************AboutMe样式************************************************/
+.name-label {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+}
+
+.title-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #7f8c8d;
+}
+
+.section-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #34495e;
+}
+
+.project-box {
+    -fx-background-color: -color-bg-default;
+    -fx-background-radius: 8;
+    -fx-border-color: rgba(0, 0, 0, 0.05);
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+    -fx-padding: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 6, 0.3, 0, 2);
+    -fx-transition: all 0.2s ease-in-out;
+}
+
+.project-box:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 12, 0.5, 0, 4);
+    -fx-scale-x: 1.015;
+    -fx-scale-y: 1.015;
+    -fx-cursor: hand;
+}
+
+
+.project-title {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+}
+
+.project-desc {
+    -fx-text-fill: #555;
+    -fx-font-size: 12px;
+}
+
+/**************************自定义combobox样式************************************************/
+.combo-box-search {
+    -fx-background-color: -color-bg-default;
+    -fx-border-color: -color-border-default;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+    -fx-padding: 5 7 5 7;
+    -fx-background-insets: 0;
+}
+
+
+.update-text-field {
+    -fx-background-color: -color-bg-default;
+    -fx-border-color: -color-border-default;
+    -fx-padding: 5 7 5 7;
+    -fx-background-insets: 0;
+}
+
+
+
+
+
+
+
+
+
+

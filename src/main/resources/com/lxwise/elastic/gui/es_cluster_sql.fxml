@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import org.fxmisc.richtext.*?>
+
+<StackPane prefWidth="1243.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lxwise.elastic.gui.ClusterSqlController">
+    <children>
+        <BorderPane fx:id="contentPane" styleClass="custom-float-card-container">
+            <StackPane.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" />
+            </StackPane.margin>
+
+            <!-- 顶部控件 -->
+            <top>
+                <BorderPane BorderPane.alignment="CENTER">
+                    <center>
+                        <HBox alignment="CENTER" spacing="5.0">
+                            <children>
+                                <Label text="%cluster.sql.autoLoading" />
+                                <CheckBox fx:id="loadCheckBox" mnemonicParsing="false" />
+                            </children>
+                        </HBox>
+                    </center>
+                    <left>
+                        <HBox alignment="CENTER" spacing="5.0" BorderPane.alignment="CENTER">
+                            <children>
+                                <Label text="*" textFill="#f22020">
+                                    <HBox.margin>
+                                        <Insets right="-2.0" />
+                                    </HBox.margin>
+                                </Label>
+                                <Label text="%cluster.sql.batchSize" />
+                                <Spinner fx:id="bathSizeSpinner" />
+                            </children>
+                        </HBox>
+                    </left>
+                    <right>
+                        <HBox alignment="CENTER" prefHeight="23.0" spacing="10.0" BorderPane.alignment="CENTER">
+                            <children>
+                                <Label fx:id="resultTipLabel" maxWidth="Infinity" visible="false" wrapText="true">
+                                    <HBox.margin>
+                                        <Insets left="5.0" />
+                                    </HBox.margin>
+                                </Label>
+
+                                <!-- 弹性空白填充 -->
+                                <Region HBox.hgrow="ALWAYS" />
+
+                                <Button fx:id="searchBtn" minWidth="80" mnemonicParsing="false" onAction="#searchAction" text="%cluster.sql.search">
+                                    <HBox.margin>
+                                        <Insets right="5.0" />
+                                    </HBox.margin>
+                                </Button>
+                            </children>
+                        </HBox>
+                    </right>
+
+
+               <BorderPane.margin>
+                  <Insets top="10.0" />
+               </BorderPane.margin>
+                </BorderPane>
+            </top>
+
+            <!-- 中间 + 底部结果区域 -->
+            <center>
+                <SplitPane fx:id="mainSplitPane" dividerPositions="0.25" orientation="VERTICAL" VBox.vgrow="ALWAYS">
+                    <!-- 顶部 SQL 输入区 -->
+                    <VBox spacing="5.0">
+                        <TextArea fx:id="sqlInputArea" promptText="%cluster.sql.inputSql" wrapText="true" VBox.vgrow="ALWAYS" />
+                    </VBox>
+
+                    <!-- 下方内容区域 -->
+                    <VBox spacing="5.0" VBox.vgrow="ALWAYS">
+                        <!-- Tab 区域 -->
+                        <TabPane fx:id="dataTabPane" maxHeight="50" minHeight="50" tabClosingPolicy="UNAVAILABLE" VBox.vgrow="NEVER">
+                            <tabs>
+                                <Tab id="table" text="%cluster.sql.table">
+                                    <content><AnchorPane /></content>
+                                </Tab>
+                                <Tab id="json" text="JSON">
+                                    <content><AnchorPane /></content>
+                                </Tab>
+                            </tabs>
+                        </TabPane>
+
+                        <!-- 数据展示区 -->
+                        <StackPane fx:id="dataPane" VBox.vgrow="ALWAYS">
+                            <children>
+                                <!-- 表格展示 -->
+                                <BorderPane fx:id="dataTablePane">
+                                    <top>
+                                        <HBox fx:id="searchInputGroup" alignment="CENTER_RIGHT" spacing="10.0">
+                                            <children>
+                                                <Button fx:id="filterBtn" onAction="#filterAction" />
+                                                <Button fx:id="downloadBtn" onAction="#downloadAction" />
+                                            </children>
+                                        </HBox>
+                                    </top>
+                                    <center>
+                                        <TableView fx:id="dataTableView">
+                                            <padding><Insets top="5.0" /></padding>
+                                 <BorderPane.margin>
+                                    <Insets top="5.0" />
+                                 </BorderPane.margin>
+                                        </TableView>
+                                    </center>
+                                </BorderPane>
+
+                                <!-- JSON 展示 -->
+                                <VBox fx:id="dataJsonPane" spacing="10.0">
+                                    <children>
+<!--                                        <HBox fx:id="searchInputGroup" alignment="CENTER_RIGHT">-->
+<!--                                            <children>-->
+<!--                                                <Button fx:id="copyBtn" onAction="#copyAction" />-->
+<!--                                                <Button fx:id="downloadJsonBtn" onAction="#downloadJsonAction" />-->
+<!--                                            </children>-->
+<!--                                        </HBox>-->
+                                        <StyleClassedTextArea fx:id="outcomeTextArea" VBox.vgrow="ALWAYS" />
+                                    </children>
+                                </VBox>
+                            </children>
+                        </StackPane>
+                    </VBox>
+               <BorderPane.margin>
+                  <Insets top="10.0" />
+               </BorderPane.margin>
+                </SplitPane>
+            </center>
+
+        </BorderPane>
+    </children>
+</StackPane>

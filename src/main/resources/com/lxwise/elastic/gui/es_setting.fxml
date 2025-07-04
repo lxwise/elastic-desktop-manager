@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="411.0" prefWidth="643.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lxwise.elastic.gui.SettingController">
+    <children>
+    <AnchorPane fx:id="center" layoutX="20.0" layoutY="-10.0" prefHeight="411.0" prefWidth="623.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0" />
+    </children>
+
+</AnchorPane>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false">
+    <!-- 配置项定义 -->
+    <property name="LOG_PATH" value="${LOG_PATH}"/>
+    <property name="ENCODING" value="UTF-8"/>
+    <property name="PATTERN_CONSOLE"
+              value="%date{yyyy-MM-dd HH:mm:ss.SSS} [%thread] [%level] %logger.%method-%line : %message%n"/>
+    <property name="PATTERN_FILE"
+              value="%date{yyyy-MM-dd HH:mm:ss.SSS} [%thread] [%level] %logger.%method-%line : %message%n"/>
+    <!--控制台输出日志-->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${PATTERN_CONSOLE}</pattern>
+            <charset>${ENCODING}</charset>
+        </encoder>
+    </appender>
+
+    <!-- 根日志输出 不做过滤默认输出所有日志-->
+    <appender name="ROOT_APPENDER" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <encoder>
+            <pattern>${PATTERN_FILE}</pattern>
+            <charset>${ENCODING}</charset>
+        </encoder>
+        <!--        <file>log/root.log</file>-->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_PATH}/log-%d{yyyyMMdd}.log.gz</fileNamePattern>
+            <maxHistory>168</maxHistory>
+        </rollingPolicy>
+    </appender>
+
+    <!-- ERROR日志输出 只输出错误日志方便查找问题 错误日志最好携带相应的错误编码 -->
+    <appender name="ERROR_APPENDER" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <encoder>
+            <pattern>${PATTERN_FILE}</pattern>
+            <charset>${ENCODING}</charset>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <file>${LOG_PATH}/error.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_PATH}/error-%d{yyyyMMdd}.log.gz</fileNamePattern>
+            <maxHistory>168</maxHistory>
+        </rollingPolicy>
+    </appender>
+
+    <!-- root级别以及appender -->
+    <root level="info">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="ROOT_APPENDER"/>
+        <appender-ref ref="ERROR_APPENDER"/>
+    </root>
+</configuration>

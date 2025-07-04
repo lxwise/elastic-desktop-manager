@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="rootPane" minHeight="766.0" minWidth="1216.0" prefHeight="766.0" prefWidth="1216.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lxwise.elastic.gui.HomeController">
+    <children>
+      <StackPane fx:id="modalPanePage" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+              <BorderPane fx:id="contentPane" prefHeight="200.0" prefWidth="200.0">
+                  <center>
+                      <BorderPane BorderPane.alignment="CENTER">
+                     <top>
+                        <AnchorPane maxHeight="80.0" prefHeight="49.0" prefWidth="1216.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <ImageView fx:id="logoImg" fitHeight="30.0" fitWidth="30.0" layoutX="41.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="41.0" AnchorPane.topAnchor="25.0">
+
+                              </ImageView>
+                              <Button fx:id="selectorBtn" layoutX="80.0" layoutY="26.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="180.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="26.0" />
+                              <HBox alignment="CENTER_RIGHT" layoutX="1090.0" layoutY="6.0" prefHeight="65.0" prefWidth="77.0" AnchorPane.bottomAnchor="8.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="7.0">
+                                 <children>
+                                     <Button fx:id="themeButton" mnemonicParsing="false" onAction="#changeTheme" />
+                                     <Button fx:id="giftButton" mnemonicParsing="false" onAction="#showGift" />
+                                     <Button fx:id="settingButton" mnemonicParsing="false" onAction="#showSetting" />
+                                     <Button fx:id="aboutMeButton" mnemonicParsing="false" onAction="#changeAboutMe" />
+                                     <Button fx:id="codeButton" mnemonicParsing="false" onAction="#changeOpenCode" />
+                                 </children>
+                              </HBox>
+                              <Separator layoutX="4.0" layoutY="60.0" prefHeight="0.0" prefWidth="1216.0" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                              <TabPane fx:id="homeTab" cache="true" layoutX="347.0" layoutY="19.0" prefHeight="42.0" prefWidth="670.0" tabClosingPolicy="UNAVAILABLE" visible="false">
+                                <tabs>
+                                  <Tab id="main" text="%home.menu.main">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                    </content>
+                                  </Tab>
+                                  <Tab id="node" text="%home.menu.node">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                    </content>
+                                  </Tab>
+                                    <Tab id="sharding" text="%home.menu.sharding">
+                                        <content>
+                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                        </content>
+                                    </Tab>
+                                    <Tab id="index" text="%home.menu.index">
+                                        <content>
+                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                        </content>
+                                    </Tab>
+                                    <Tab id="rest" text="%home.menu.rest">
+                                        <content>
+                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                        </content>
+                                    </Tab>
+                                    <Tab id="sql" text="%home.menu.sql">
+                                        <content>
+                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                        </content>
+                                    </Tab>
+                                    <Tab id="search" text="%home.menu.search">
+                                        <content>
+                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                        </content>
+                                    </Tab>
+                                    <Tab id="more" fx:id="moreTab" text="%home.menu.more">
+                                    </Tab>
+                                </tabs>
+                                 <cursor>
+                                    <Cursor fx:constant="DEFAULT" />
+                                 </cursor>
+                              </TabPane>
+                           </children>
+                        </AnchorPane>
+                     </top>
+                     <center>
+                        <StackPane fx:id="pagePane" prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                     </center>
+                  </BorderPane>
+                  </center>
+                  <bottom>
+                      <HBox alignment="CENTER_RIGHT" prefHeight="2">
+      
+                          <HBox fx:id="tooltipBox" alignment="CENTER_LEFT" style="-fx-padding: 0 0 0 10">
+
+                    </HBox>
+                          <HBox fx:id="state" alignment="CENTER_RIGHT" />
+                          <padding>
+                              <Insets right="20.0" />
+                          </padding>
+                      </HBox>
+                  </bottom>
+               <top>
+                  <VBox spacing="2.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <MenuBar fx:id="menuBar">
+                          <menus>
+                            <Menu mnemonicParsing="false" text="%menu.file">
+                              <items>
+                                    <MenuItem mnemonicParsing="false" text="%menu.item.new" userData="menu.item.new" />
+                                    <MenuItem mnemonicParsing="false" text="%menu.item.open" userData="menu.item.open" />
+                                    <MenuItem mnemonicParsing="false" text="%menu.item.setting" userData="menu.item.setting" />
+                                    <MenuItem mnemonicParsing="false" text="%menu.item.exit" userData="menu.item.exit" />
+                              </items>
+                            </Menu>
+                            <Menu mnemonicParsing="false" text="%menu.edit">
+                              <items>
+                                    <MenuItem mnemonicParsing="false" text="%menu.item.paste" userData="menu.item.paste" />
+                                    <MenuItem mnemonicParsing="false" text="%menu.item.copy" userData="menu.item.copy" />
+                                      <MenuItem mnemonicParsing="false" text="%menu.item.undo" userData="menu.item.undo" />
+                                      <MenuItem mnemonicParsing="false" text="%menu.item.redo" userData="menu.item.redo" />
+                                      <SeparatorMenuItem />
+                                      <MenuItem mnemonicParsing="false" text="%menu.item.cut" userData="menu.item.cut" />
+                                      <MenuItem mnemonicParsing="false" text="%menu.item.selectAll" userData="menu.item.selectAll" />
+      
+                              </items>
+                            </Menu>
+                            <Menu mnemonicParsing="false" text="%menu.view">
+                              <items>
+                                    <MenuItem mnemonicParsing="false" text="%menu.item.reload" userData="menu.item.reload" />
+                                    <MenuItem mnemonicParsing="false" text="%menu.item.forceReload" userData="menu.item.forceReload" />
+                              </items>
+                            </Menu>
+                              <Menu mnemonicParsing="false" text="%menu.window">
+                                <items>
+                                    <MenuItem mnemonicParsing="false" text="%menu.item.max" userData="menu.item.max" />
+                                    <MenuItem mnemonicParsing="false" text="%menu.item.min" userData="menu.item.min" />
+                                </items>
+                              </Menu>
+                              <Menu mnemonicParsing="false" text="%menu.help">
+                                <items>
+                                    <MenuItem mnemonicParsing="false" text="%menu.item.code" userData="menu.item.code" />
+                                    <MenuItem mnemonicParsing="false" text="%menu.item.update" userData="menu.item.update" />
+                                    <MenuItem mnemonicParsing="false" text="%menu.item.feedback" userData="menu.item.feedback" />
+                                    <MenuItem mnemonicParsing="false" text="%menu.item.about" userData="menu.item.about" />
+                                </items>
+                              </Menu>
+                          </menus>
+                        </MenuBar>
+                         <ProgressBar fx:id="loadingBar" maxWidth="Infinity" prefHeight="3.0" progress="0.0" visible="false" VBox.vgrow="NEVER" />
+
+                     </children>
+                  </VBox>
+               </top>
+              </BorderPane>
+         </children>
+      </StackPane>
+    </children>
+</AnchorPane>

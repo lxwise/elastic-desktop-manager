@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lxwise.elastic.gui.ClusterIndexController">
+   <children>
+      <BorderPane fx:id="rootPane" styleClass="custom-float-card-container">
+         <StackPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" />
+         </StackPane.margin>
+         <center>
+<!--            <VBox spacing="3.0">-->
+<!--                &lt;!&ndash; 数据表格 &ndash;&gt;-->
+<!--                <TableView fx:id="tableNodeView" prefHeight="692.0" prefWidth="1040.0"/>-->
+<!--                <StackPane fx:id="contentPane" prefHeight="750.0" prefWidth="1299.0">-->
+<!--                    <children>-->
+<!--                        <TableView fx:id="tableView" prefHeight="692.0" prefWidth="1040.0">-->
+<!--                        <StackPane.margin>-->
+<!--                           <Insets />-->
+<!--                        </StackPane.margin></TableView>-->
+<!--                    </children>-->
+<!--                  <VBox.margin>-->
+<!--                     <Insets top="5.0" />-->
+<!--                  </VBox.margin>-->
+<!--                </StackPane>-->
+<!--               <padding>-->
+<!--                  <Insets top="5.0" />-->
+<!--               </padding>-->
+<!--               <BorderPane.margin>-->
+<!--                  <Insets top="5.0" />-->
+<!--               </BorderPane.margin>-->
+<!--            </VBox>-->
+
+             <VBox  spacing="3.0" >
+                 <Separator prefWidth="200.0" />
+                 <!-- 数据表格 -->
+                 <TableView VBox.vgrow="ALWAYS" fx:id="tableView" prefHeight="692.0" prefWidth="1040.0"/>
+                 <padding>
+                     <Insets top="5.0" />
+                 </padding>
+                 <BorderPane.margin>
+                     <Insets top="5.0" />
+                 </BorderPane.margin>
+             </VBox>
+         </center>
+         <top>
+            <AnchorPane prefHeight="40.0" prefWidth="1279.0" BorderPane.alignment="CENTER">
+               <children>
+                    <Label layoutX="14.0" layoutY="13.0" prefHeight="22.0" prefWidth="79.0" text="%cluster.index.info" AnchorPane.leftAnchor="10.0">
+                        <font>
+                            <Font size="16.0" />
+                        </font>
+                    </Label>
+                    <HBox alignment="CENTER_RIGHT" layoutX="1149.0" layoutY="14.0" prefHeight="23.0" prefWidth="212.0" spacing="5.0" AnchorPane.rightAnchor="30.0">
+                        <children>
+                            <Button fx:id="handleRefreshBtn" onAction="#handleRefresh" prefHeight="23.0" prefWidth="27.0" />
+                            <HBox fx:id="searchInputGroup" alignment="CENTER_RIGHT" />
+                        </children>
+                    </HBox>
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+   </children>
+</StackPane>
