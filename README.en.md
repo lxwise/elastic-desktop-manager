@@ -4,7 +4,7 @@
   </a>
 </p>
 
-<img align="right" width="110" src="assets/es-logo.png">
+<img align="right" width="110" src="./doc/es-logo.png">
 
 > 🚀🚀🚀 Faster, better performing, more stable ES desktop (GUI) management client, compatible with Windows, Mac, Linux, outstanding performance, easy to load large amounts of data
 
@@ -103,18 +103,18 @@ Download `elastic-desktop-manager.jar` and run `java -jar elastic-desktop-manage
 
 | Function         | Light Color                                                  | Dark                                                         | Dracula                                                      | NordDark                                                     |
 | ---------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Start            | ![启动](assets/%E5%90%AF%E5%8A%A81.png)                      | -                                                            | -                                                            | -                                                            |
-| Home             | ![首页1](assets/%E9%A6%96%E9%A1%B51.png)                     | ![首页2](assets/%E9%A6%96%E9%A1%B52.png)                     | ![首页3](assets/%E9%A6%96%E9%A1%B53.png)                     | ![首页4](assets/%E9%A6%96%E9%A1%B54.png)                     |
-| Node             | ![节点1](assets/节点1.png)                                   | ![节点2](assets/%E8%8A%82%E7%82%B92.png)                     | ![节点3](assets/%E8%8A%82%E7%82%B93.png)                     | ![节点4](assets/%E8%8A%82%E7%82%B94.png)                     |
-| Sharding         | ![分片1](assets/分片1.png)                                   | ![分片2](assets/%E5%88%86%E7%89%872.png)                     | ![分片3](assets/%E5%88%86%E7%89%873.png)                     | ![分片4](assets/%E5%88%86%E7%89%874.png)                     |
-| index            | ![索引1](assets/索引1.png)                                   | ![索引2](assets/%E7%B4%A2%E5%BC%952.png)                     | ![索引3](assets/%E7%B4%A2%E5%BC%953.png)                     | ![索引4](assets/%E7%B4%A2%E5%BC%954.png)                     |
-| Rest             | ![rest1](assets/rest1.png)                                   | ![rest2](assets/rest2.png)                                   | ![rest3](assets/rest3.png)                                   | ![rest4](assets/rest4.png)                                   |
-| Sql              | ![sql1](assets/sql1.png)                                     | ![sql2](assets/sql2.png)                                     | ![sql3](assets/sql3.png)                                     | ![sql4](assets/sql4.png)                                     |
-| Query            | ![查询1](assets/查询1.png)                                   | ![查询2](assets/%E6%9F%A5%E8%AF%A22.png)                     | ![查询3](assets/%E6%9F%A5%E8%AF%A23.png)                     | ![查询4](assets/%E6%9F%A5%E8%AF%A24.png)                     |
-| Query conditions | ![查询条件1](assets/%E6%9F%A5%E8%AF%A2%E6%9D%A1%E4%BB%B61.png) | ![查询条件2](assets/%E6%9F%A5%E8%AF%A2%E6%9D%A1%E4%BB%B62.png) | ![查询条件3](assets/%E6%9F%A5%E8%AF%A2%E6%9D%A1%E4%BB%B63.png) | ![查询条件4](assets/%E6%9F%A5%E8%AF%A2%E6%9D%A1%E4%BB%B64.png) |
-| Query Update     | ![查询更新1](assets/%E6%9F%A5%E8%AF%A2%E6%9B%B4%E6%96%B01.png) | ![查询更新2](assets/%E6%9F%A5%E8%AF%A2%E6%9B%B4%E6%96%B02.png) | ![查询更新3](assets/%E6%9F%A5%E8%AF%A2%E6%9B%B4%E6%96%B03.png) | ![查询更新4](assets/%E6%9F%A5%E8%AF%A2%E6%9B%B4%E6%96%B04.png) |
-| Connect          | ![连接1](assets/%E8%BF%9E%E6%8E%A51.png)                     | ![连接2](assets/%E8%BF%9E%E6%8E%A52.png)                     | ![连接3](assets/%E8%BF%9E%E6%8E%A53.png)                     | ![连接4](assets/%E8%BF%9E%E6%8E%A54.png)                     |
-| set up           | ![设置1](assets/%E8%AE%BE%E7%BD%AE1.png)                     | ![设置2](assets/%E8%AE%BE%E7%BD%AE2.png)                     | ![设置3](assets/%E8%AE%BE%E7%BD%AE3.png)                     | ![设置4](assets/%E8%AE%BE%E7%BD%AE4.png)                     |
+| Start            | ![启动](./doc/%E5%90%AF%E5%8A%A81.png)                      | -                                                            | -                                                            | -                                                            |
+| Home             | ![首页1](./doc/%E9%A6%96%E9%A1%B51.png)                     | ![首页2](./doc/%E9%A6%96%E9%A1%B52.png)                     | ![首页3](./doc/%E9%A6%96%E9%A1%B53.png)                     | ![首页4](./doc/%E9%A6%96%E9%A1%B54.png)                     |
+| Node             | ![节点1](./doc/节点1.png)                                   | ![节点2](./doc/%E8%8A%82%E7%82%B92.png)                     | ![节点3](./doc/%E8%8A%82%E7%82%B93.png)                     | ![节点4](./doc/%E8%8A%82%E7%82%B94.png)                     |
+| Sharding         | ![分片1](./doc/分片1.png)                                   | ![分片2](./doc/%E5%88%86%E7%89%872.png)                     | ![分片3](./doc/%E5%88%86%E7%89%873.png)                     | ![分片4](./doc/%E5%88%86%E7%89%874.png)                     |
+| index            | ![索引1](./doc/索引1.png)                                   | ![索引2](./doc/%E7%B4%A2%E5%BC%952.png)                     | ![索引3](./doc/%E7%B4%A2%E5%BC%953.png)                     | ![索引4](./doc/%E7%B4%A2%E5%BC%954.png)                     |
+| Rest             | ![rest1](./doc/rest1.png)                                   | ![rest2](./doc/rest2.png)                                   | ![rest3](./doc/rest3.png)                                   | ![rest4](./doc/rest4.png)                                   |
+| Sql              | ![sql1](./doc/sql1.png)                                     | ![sql2](./doc/sql2.png)                                     | ![sql3](./doc/sql3.png)                                     | ![sql4](./doc/sql4.png)                                     |
+| Query            | ![查询1](./doc/查询1.png)                                   | ![查询2](./doc/%E6%9F%A5%E8%AF%A22.png)                     | ![查询3](./doc/%E6%9F%A5%E8%AF%A23.png)                     | ![查询4](./doc/%E6%9F%A5%E8%AF%A24.png)                     |
+| Query conditions | ![查询条件1](./doc/%E6%9F%A5%E8%AF%A2%E6%9D%A1%E4%BB%B61.png) | ![查询条件2](./doc/%E6%9F%A5%E8%AF%A2%E6%9D%A1%E4%BB%B62.png) | ![查询条件3](./doc/%E6%9F%A5%E8%AF%A2%E6%9D%A1%E4%BB%B63.png) | ![查询条件4](./doc/%E6%9F%A5%E8%AF%A2%E6%9D%A1%E4%BB%B64.png) |
+| Query Update     | ![查询更新1](./doc/%E6%9F%A5%E8%AF%A2%E6%9B%B4%E6%96%B01.png) | ![查询更新2](./doc/%E6%9F%A5%E8%AF%A2%E6%9B%B4%E6%96%B02.png) | ![查询更新3](./doc/%E6%9F%A5%E8%AF%A2%E6%9B%B4%E6%96%B03.png) | ![查询更新4](./doc/%E6%9F%A5%E8%AF%A2%E6%9B%B4%E6%96%B04.png) |
+| Connect          | ![连接1](./doc/%E8%BF%9E%E6%8E%A51.png)                     | ![连接2](./doc/%E8%BF%9E%E6%8E%A52.png)                     | ![连接3](./doc/%E8%BF%9E%E6%8E%A53.png)                     | ![连接4](./doc/%E8%BF%9E%E6%8E%A54.png)                     |
+| set up           | ![设置1](./doc/%E8%AE%BE%E7%BD%AE1.png)                     | ![设置2](./doc/%E8%AE%BE%E7%BD%AE2.png)                     | ![设置3](./doc/%E8%AE%BE%E7%BD%AE3.png)                     | ![设置4](./doc/%E8%AE%BE%E7%BD%AE4.png)                     |
 
 
 

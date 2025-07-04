@@ -103,12 +103,12 @@ ps: 虽然我知道，大部分人和作者菌一样喜欢白嫖，都是看了�
 |------|----------------------------|---------------------------|---------------------------|---------------------------|
 | 启动   | ![启动](./doc/启动1.png)       | -                         | -                         | -                         |
 | 主页   | ![首页1](./doc/首页1.png)      | ![首页2](./doc/首页2.png)     | ![首页3](./doc/首页3.png)     | ![首页4](./doc/首页4.png)     |
-| 节点   | ![节点1](assets/节点1.png)     | ![节点2](./doc/节点2.png)     | ![节点3](./doc/节点3.png)     | ![节点4](./doc/节点4.png)     |
-| 分片   | ![分片1](assets/分片1.png)     | ![分片2](./doc/分片2.png)     | ![分片3](./doc/分片3.png)     | ![分片4](./doc/分片4.png)     |
-| 索引   | ![索引1](assets/索引1.png)     | ![索引2](./doc/索引2.png)     | ![索引3](./doc/索引3.png)     | ![索引4](./doc/索引4.png)     |
-| Rest | ![rest1](assets/rest1.png) | ![rest2](./doc/rest2.png) | ![rest3](./doc/rest3.png) | ![rest4](./doc/rest4.png) |
-| Sql  | ![sql1](assets/sql1.png)   | ![sql2](./doc/sql2.png)   | ![sql3](./doc/sql3.png)   | ![sql4](./doc/sql4.png)   |
-| 查询   | ![查询1](assets/查询1.png)     | ![查询2](./doc/查询2.png)     | ![查询3](./doc/查询3.png)     | ![查询4](./doc/查询4.png)     |
+| 节点   | ![节点1](./doc/节点1.png)     | ![节点2](./doc/节点2.png)     | ![节点3](./doc/节点3.png)     | ![节点4](./doc/节点4.png)     |
+| 分片   | ![分片1](./doc/分片1.png)     | ![分片2](./doc/分片2.png)     | ![分片3](./doc/分片3.png)     | ![分片4](./doc/分片4.png)     |
+| 索引   | ![索引1](./doc/索引1.png)     | ![索引2](./doc/索引2.png)     | ![索引3](./doc/索引3.png)     | ![索引4](./doc/索引4.png)     |
+| Rest | ![rest1](./doc/rest1.png) | ![rest2](./doc/rest2.png) | ![rest3](./doc/rest3.png) | ![rest4](./doc/rest4.png) |
+| Sql  | ![sql1](./doc/sql1.png)   | ![sql2](./doc/sql2.png)   | ![sql3](./doc/sql3.png)   | ![sql4](./doc/sql4.png)   |
+| 查询   | ![查询1](./doc/查询1.png)     | ![查询2](./doc/查询2.png)     | ![查询3](./doc/查询3.png)     | ![查询4](./doc/查询4.png)     |
 | 查询条件 | ![查询条件1](./doc/查询条件1.png)  | ![查询条件2](./doc/查询条件2.png) | ![查询条件3](./doc/查询条件3.png) | ![查询条件4](./doc/查询条件4.png) |
 | 查询更新 | ![查询更新1](./doc/查询更新1.png)  | ![查询更新2](./doc/查询更新2.png) | ![查询更新3](./doc/查询更新3.png) | ![查询更新4](./doc/查询更新4.png) |
 | 连接   | ![连接1](./doc/连接1.png)      | ![连接2](./doc/连接2.png)     | ![连接3](./doc/连接3.png)     | ![连接4](./doc/连接4.png)     |
