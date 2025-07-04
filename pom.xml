@@ -122,7 +122,7 @@
                 <artifactId>jfx-maven-plugin</artifactId>
                 <version>1.0.0</version>
                 <configuration>
-                    <type>exe</type>
+                    <type>rpm</type>
                     <name>elastic-desktop-manager</name>
                     <mainClass>com.lxwise.elastic.AppLauncher</mainClass>
                     <macPackageIdentifier>elastic-desktop-manager</macPackageIdentifier>
@@ -136,11 +136,11 @@
                     <description>
                         elastic-desktop-manager是一款JavaFX写的elasticsearch查询管理工具。支持图形化界面构建复杂查询条件的简单查询,聚合查询,支持RESTAPI和SQL语句查询，支持ES的状态，性能，索引查询。
                     </description>
-                    <winDirChooser>true</winDirChooser>
-                    <winMenu>true</winMenu>
-                    <winShortcut>true</winShortcut>
-                    <winPerUserInstall>true</winPerUserInstall>
-                    <winShortcutPrompt>true</winShortcutPrompt>
+<!--                    <winDirChooser>true</winDirChooser>-->
+<!--                    <winMenu>true</winMenu>-->
+<!--                    <winShortcut>true</winShortcut>-->
+<!--                    <winPerUserInstall>true</winPerUserInstall>-->
+<!--                    <winShortcutPrompt>true</winShortcutPrompt>-->
                 </configuration>
             </plugin>
         </plugins>
