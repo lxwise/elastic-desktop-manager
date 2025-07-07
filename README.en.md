@@ -131,7 +131,7 @@ Download `elastic-desktop-manager.jar` and run `java -jar elastic-desktop-manage
       <img src="./doc/weChatPay.png" width="350px" style="margin-right: 20px;"/>
       <img src="./doc/alipay_shot.png" width="250px"/>
     </p>
-
+    
     
 
 
@@ -189,3 +189,16 @@ This project is a pure client tool and will not upload data or collect any user 
 
 **Thanks to all open source contributors**, thanks to the big guys in the group for answering questions, javafx communication group: **`518914410`**, thanks to all developers who use, give feedback and contribute. If you have suggestions or bug feedback during use, you are welcome to submit an issue or participate in the contribution.
 
+
+
+## ⚠️ Disclaimer
+
+> The `elastic-desktop-manager` project is an open-source desktop tool developed for **learning and research purposes only**. Please **do not use it for any illegal activities** or in violation of the Elasticsearch license agreement.
+>
+> All data and functionalities shown in this tool rely on the user's connected Elasticsearch instance. The developer is **not responsible** for any data loss, data leakage, service interruption, or legal liabilities resulting from the use of this software.
+>
+> This software **does not collect any personal information**, nor does it transmit data over the network. All operations are executed within the user's local environment. Please evaluate and assume the associated risks before using it.
+>
+> This project has referred to several excellent open-source projects during development, solely for educational and feature enhancement purposes. **If you are the owner of any referenced work and believe your rights have been infringed, please contact the author immediately. We will remove or update the related content without delay.**
+>
+> By using this software, you acknowledge and accept the terms stated above.
