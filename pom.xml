@@ -19,11 +19,6 @@
 
     <dependencies>
         <dependency>
-            <groupId>io.gitee.podigua</groupId>
-            <artifactId>javafx-path</artifactId>
-            <version>0.0.2</version>
-        </dependency>
-        <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
             <version>${javafx.version}</version>
@@ -40,12 +35,12 @@
         </dependency>
         <dependency>
             <groupId>org.kordamp.ikonli</groupId>
-            <artifactId>ikonli-material2-pack</artifactId>
+            <artifactId>ikonli-antdesignicons-pack</artifactId>
             <version>12.3.1</version>
         </dependency>
         <dependency>
             <groupId>org.kordamp.ikonli</groupId>
-            <artifactId>ikonli-antdesignicons-pack</artifactId>
+            <artifactId>ikonli-material2-pack</artifactId>
             <version>12.3.1</version>
         </dependency>
         <dependency>
@@ -94,6 +89,11 @@
             <version>2.14.0</version>
         </dependency>
         <dependency>
+            <groupId>io.gitee.podigua</groupId>
+            <artifactId>javafx-path</artifactId>
+            <version>0.0.5</version>
+        </dependency>
+        <dependency>
             <groupId>org.elasticsearch.client</groupId>
             <artifactId>elasticsearch-rest-high-level-client</artifactId>
             <version>7.10.2</version>
@@ -103,7 +103,6 @@
             <artifactId>richtextfx</artifactId>
             <version>0.11.4</version>
         </dependency>
-
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
@@ -136,11 +135,11 @@
                     <description>
                         elastic-desktop-manager是一款JavaFX写的elasticsearch查询管理工具。支持图形化界面构建复杂查询条件的简单查询,聚合查询,支持RESTAPI和SQL语句查询，支持ES的状态，性能，索引查询。
                     </description>
-<!--                    <winDirChooser>true</winDirChooser>-->
-<!--                    <winMenu>true</winMenu>-->
-<!--                    <winShortcut>true</winShortcut>-->
-<!--                    <winPerUserInstall>true</winPerUserInstall>-->
-<!--                    <winShortcutPrompt>true</winShortcutPrompt>-->
+                    <winDirChooser>true</winDirChooser>
+                    <winMenu>true</winMenu>
+                    <winShortcut>true</winShortcut>
+                    <winPerUserInstall>true</winPerUserInstall>
+                    <winShortcutPrompt>true</winShortcutPrompt>
                 </configuration>
             </plugin>
         </plugins>
